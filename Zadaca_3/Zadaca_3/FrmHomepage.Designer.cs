@@ -36,6 +36,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox1.Controls.Add(this.btnAddmaterial);
             this.groupBox1.Controls.Add(this.btnLogout);
             this.groupBox1.Location = new System.Drawing.Point(89, 68);
@@ -63,6 +64,7 @@
             this.btnAddmaterial.TabIndex = 1;
             this.btnAddmaterial.Text = "Dodaj materijale";
             this.btnAddmaterial.UseVisualStyleBackColor = true;
+            this.btnAddmaterial.Click += new System.EventHandler(this.btnAddmaterial_Click);
             // 
             // FrmHomepage
             // 
@@ -72,6 +74,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmHomepage";
             this.Text = "Homepage";
+            this.Load += new System.EventHandler(this.FrmHomepage_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

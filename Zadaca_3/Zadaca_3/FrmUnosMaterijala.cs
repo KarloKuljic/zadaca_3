@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Zadaca_3
 {
-    public partial class Form1 : Form
+    public partial class FrmUnosMaterijala : Form
     {
-        public Form1()
+        public FrmUnosMaterijala()
         {
             InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmHomepage frmHomepage = new FrmHomepage();
+            Hide();
+            frmHomepage.ShowDialog();
+            Close();
         }
     }
 }

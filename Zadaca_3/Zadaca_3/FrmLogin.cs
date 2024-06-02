@@ -13,8 +13,7 @@ namespace Zadaca_3
 {
     public partial class FrmLogin : Form
     {
-        string username = "Marko Marulić";
-        string password = "lozinka123";
+        
         public static Owner LoggedOwner { get; set; }
         public FrmLogin()
         {

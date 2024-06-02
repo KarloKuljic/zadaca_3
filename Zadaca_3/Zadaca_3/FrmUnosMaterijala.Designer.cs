@@ -1,6 +1,6 @@
 ﻿namespace Zadaca_3
 {
-    partial class Form1
+    partial class FrmUnosMaterijala
     {
         /// <summary>
         /// Required designer variable.
@@ -28,70 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnNazad = new System.Windows.Forms.Button();
-            this.cmbMaterijali = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.cmbOdabirMaterijala = new System.Windows.Forms.ComboBox();
+            this.txtOdabirMaterijala = new System.Windows.Forms.Label();
+            this.numKolicina = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numKolicina)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnNazad
+            // btnBack
             // 
-            this.btnNazad.Location = new System.Drawing.Point(12, 348);
-            this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(90, 40);
-            this.btnNazad.TabIndex = 0;
-            this.btnNazad.Text = "Nazad";
-            this.btnNazad.UseVisualStyleBackColor = true;
+            this.btnBack.Location = new System.Drawing.Point(12, 415);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Nazad";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // cmbMaterijali
+            // cmbOdabirMaterijala
             // 
-            this.cmbMaterijali.AllowDrop = true;
-            this.cmbMaterijali.FormattingEnabled = true;
-            this.cmbMaterijali.Location = new System.Drawing.Point(267, 136);
-            this.cmbMaterijali.Name = "cmbMaterijali";
-            this.cmbMaterijali.Size = new System.Drawing.Size(121, 21);
-            this.cmbMaterijali.TabIndex = 1;
+            this.cmbOdabirMaterijala.FormattingEnabled = true;
+            this.cmbOdabirMaterijala.Location = new System.Drawing.Point(352, 152);
+            this.cmbOdabirMaterijala.Name = "cmbOdabirMaterijala";
+            this.cmbOdabirMaterijala.Size = new System.Drawing.Size(121, 21);
+            this.cmbOdabirMaterijala.TabIndex = 1;
             // 
-            // label1
+            // txtOdabirMaterijala
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(123, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Odaberite materijal za unos:";
+            this.txtOdabirMaterijala.AutoSize = true;
+            this.txtOdabirMaterijala.Location = new System.Drawing.Point(249, 160);
+            this.txtOdabirMaterijala.Name = "txtOdabirMaterijala";
+            this.txtOdabirMaterijala.Size = new System.Drawing.Size(97, 13);
+            this.txtOdabirMaterijala.TabIndex = 2;
+            this.txtOdabirMaterijala.Text = "Odaberite materijal:";
             // 
-            // numericUpDown1
+            // numKolicina
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(268, 198);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numKolicina.Location = new System.Drawing.Point(353, 234);
+            this.numKolicina.Name = "numKolicina";
+            this.numKolicina.Size = new System.Drawing.Size(120, 20);
+            this.numKolicina.TabIndex = 3;
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Odaberite količinu materijala (u kg):";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(249, 241);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Odaberite količinu:";
             // 
-            // Form1
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(329, 304);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(104, 50);
+            this.btnSubmit.TabIndex = 5;
+            this.btnSubmit.Text = "Unesi";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // FrmUnosMaterijala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 400);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbMaterijali);
-            this.Controls.Add(this.btnNazad);
-            this.Name = "Form1";
-            this.Text = "Unos materijala";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.numKolicina);
+            this.Controls.Add(this.txtOdabirMaterijala);
+            this.Controls.Add(this.cmbOdabirMaterijala);
+            this.Controls.Add(this.btnBack);
+            this.Name = "FrmUnosMaterijala";
+            this.Text = "FrmUnosMaterijala";
+            ((System.ComponentModel.ISupportInitialize)(this.numKolicina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,10 +110,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnNazad;
-        private System.Windows.Forms.ComboBox cmbMaterijali;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.ComboBox cmbOdabirMaterijala;
+        private System.Windows.Forms.Label txtOdabirMaterijala;
+        private System.Windows.Forms.NumericUpDown numKolicina;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }

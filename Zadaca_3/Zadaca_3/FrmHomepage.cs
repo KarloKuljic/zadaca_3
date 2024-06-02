@@ -19,6 +19,22 @@ namespace Zadaca_3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FrmLogin frmLogin = new FrmLogin();
+            Hide();
+            frmLogin.ShowDialog();
+            Close();
+        }
+
+        private void btnAddmaterial_Click(object sender, EventArgs e)
+        {
+            FrmUnosMaterijala frmUnosMaterijala = new FrmUnosMaterijala();
+            Hide();
+            frmUnosMaterijala.ShowDialog();
+            Close();
+        }
+
+        private void FrmHomepage_Load(object sender, EventArgs e)
+        {
 
         }
     }
