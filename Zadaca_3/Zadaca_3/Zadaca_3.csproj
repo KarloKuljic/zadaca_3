@@ -46,14 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmUnosMaterijala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosMaterijala.Designer.cs">
+      <DependentUpon>FrmUnosMaterijala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHomepage.Designer.cs">
+      <DependentUpon>FrmHomepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Owner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmUnosMaterijala.resx">
+      <DependentUpon>FrmUnosMaterijala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHomepage.resx">
+      <DependentUpon>FrmHomepage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +97,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLLs\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
