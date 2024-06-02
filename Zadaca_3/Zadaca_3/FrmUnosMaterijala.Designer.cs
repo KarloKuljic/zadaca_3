@@ -50,7 +50,7 @@
             // cmbOdabirMaterijala
             // 
             this.cmbOdabirMaterijala.FormattingEnabled = true;
-            this.cmbOdabirMaterijala.Location = new System.Drawing.Point(352, 152);
+            this.cmbOdabirMaterijala.Location = new System.Drawing.Point(352, 174);
             this.cmbOdabirMaterijala.Name = "cmbOdabirMaterijala";
             this.cmbOdabirMaterijala.Size = new System.Drawing.Size(121, 21);
             this.cmbOdabirMaterijala.TabIndex = 1;
@@ -58,7 +58,7 @@
             // txtOdabirMaterijala
             // 
             this.txtOdabirMaterijala.AutoSize = true;
-            this.txtOdabirMaterijala.Location = new System.Drawing.Point(249, 160);
+            this.txtOdabirMaterijala.Location = new System.Drawing.Point(249, 182);
             this.txtOdabirMaterijala.Name = "txtOdabirMaterijala";
             this.txtOdabirMaterijala.Size = new System.Drawing.Size(97, 13);
             this.txtOdabirMaterijala.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // numKolicina
             // 
-            this.numKolicina.Location = new System.Drawing.Point(353, 234);
+            this.numKolicina.Location = new System.Drawing.Point(352, 230);
             this.numKolicina.Name = "numKolicina";
             this.numKolicina.Size = new System.Drawing.Size(120, 20);
             this.numKolicina.TabIndex = 3;
@@ -74,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(249, 241);
+            this.label2.Location = new System.Drawing.Point(251, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 4;
@@ -88,6 +88,7 @@
             this.btnSubmit.TabIndex = 5;
             this.btnSubmit.Text = "Unesi";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // FrmUnosMaterijala
             // 

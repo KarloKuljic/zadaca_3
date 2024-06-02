@@ -24,5 +24,13 @@ namespace Zadaca_3
             frmHomepage.ShowDialog();
             Close();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string Materijal = Materijal.Text;
+
+            UnesiPodatke("PI2324_kkuljic21_DB", "PI2324_kkuljic21_User", ")m6v;WCU", Materijal);
+        }
     }
 }
+

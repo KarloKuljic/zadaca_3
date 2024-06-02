@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.btnAddmaterial = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +46,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // btnAddmaterial
+            // 
+            this.btnAddmaterial.Location = new System.Drawing.Point(206, 96);
+            this.btnAddmaterial.Name = "btnAddmaterial";
+            this.btnAddmaterial.Size = new System.Drawing.Size(186, 72);
+            this.btnAddmaterial.TabIndex = 1;
+            this.btnAddmaterial.Text = "Dodaj materijale";
+            this.btnAddmaterial.UseVisualStyleBackColor = true;
+            this.btnAddmaterial.Click += new System.EventHandler(this.btnAddmaterial_Click);
+            // 
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(6, 274);
@@ -55,16 +65,6 @@
             this.btnLogout.Text = "Odjavi se";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnAddmaterial
-            // 
-            this.btnAddmaterial.Location = new System.Drawing.Point(206, 97);
-            this.btnAddmaterial.Name = "btnAddmaterial";
-            this.btnAddmaterial.Size = new System.Drawing.Size(186, 72);
-            this.btnAddmaterial.TabIndex = 1;
-            this.btnAddmaterial.Text = "Dodaj materijale";
-            this.btnAddmaterial.UseVisualStyleBackColor = true;
-            this.btnAddmaterial.Click += new System.EventHandler(this.btnAddmaterial_Click);
             // 
             // FrmHomepage
             // 
